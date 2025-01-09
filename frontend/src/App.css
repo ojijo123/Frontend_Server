@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #354fb7;
+  --secondary-color: #9aa7db;
+  --dark-color: #02052c;
+  --light-color: #eee;
+  --text-color: #333;
+  --white-color: #fff;
+  --font-family: 'Montserrat', sans-serif;
+  --transition-time: 0.6s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background: linear-gradient(to left, var(--secondary-color), var(--primary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--white-color);
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 798px;
+  max-width: 100%;
+  min-height: 480px;
+  transition: var(--transition-time);
+}
+
+/* Combine input, button, and links */
+.container input,
+.container button,
+.container a {
+  border-radius: 8px;
+  font-size: 12px;
+  transition: all var(--transition-time);
+}
+
+/* Add hover effects */
+.container button:hover {
+  background-color: var(--primary-color);
+}
+
+.container button:focus,
+.container input:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    min-height: auto;
+  }
+
+  .toggle-container {
+    display: none;
+  }
+}
