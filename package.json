@@ -1,17 +1,17 @@
 {
-  "name": "frontend",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "react-scripts start",
-     "build": "react-scripts build",
-    "test": "react-scripts test"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^4.21.2"
+    "name": "frontend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "start": "react-scripts start",
+       "build": "react-scripts build",
+      "test": "react-scripts test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+      "express": "^4.21.2"
+    }
   }
-}
